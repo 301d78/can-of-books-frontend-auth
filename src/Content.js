@@ -18,8 +18,6 @@ class Content extends React.Component {
 
       const jwt = res.__raw;
 
-      console.log({ jwt });
-
       const config = {
         headers: { "Authorization": `Bearer ${jwt}` },
         method: 'get',
